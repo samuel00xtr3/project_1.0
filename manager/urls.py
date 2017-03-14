@@ -16,6 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from users.views import UserListView
+from home.views import Index
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^users/', UserListView.as_view()),
+    url(r'^$', Index.as_view()),
 ]

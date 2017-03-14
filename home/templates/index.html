@@ -1,0 +1,51 @@
+{% load STATIC %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Strona Główna</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="main-box">
+			<div class="baner-box">
+				<div id="logo"><a href="index.php"><img alt="" src="images/logo.png"></a></div>
+				<div class="menu-top-box">
+					<ol id="menu-top-ol">
+						<li><a href="">KURSY</a></li>
+						<li><a href="">TESTY</a></li>
+						<li><a href="">ZADANIA</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">O NAS</a></li>
+						<li><a href="">KONTAKT</a></li>
+					</ol>
+				</div>
+				<div class="login-box">
+				</div>
+				
+			</div>
+			<div class="content-box">
+				<div id="m-content-box">
+					<div id="content-box-top">
+						Aktualności
+					</div>
+					<div id="content-box-bottom">
+						{% block 'content' %}
+						{% endblock %}
+					</div>
+				</div>
+			</div>
+			<div class="footer-box">
+				<table>
+					<tr><td id="foot-bar"></td></tr>
+					<tr>
+						<td id="first"><a href="">FAQ</a></td><td><a href="">Kontakt</a></td><td><a href="">Regulamin</a></td>
+						<td id="cpright">Copyright © 2016 by Sebastian Dziula. All rights reserved</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
+
